@@ -1,7 +1,8 @@
-frame_id,timestamp,scene_id,character,gesture,subtext,aesthetic_palette,emotional_tone,social_tension_score
-0,00:00:00,1:Departure,Parents,prepare_luggage,"burden unspoken",cotton+sky,quiet,0.42
-1,00:01:33,1:Train,Shukichi,look_out_window,"distance forming",gray+blue,resignation,0.38
-2,00:04:00,2:Arrival,Children,bow,"ritual masks disinterest",navy+white,awkwardness,0.61
-3,00:06:45,2:House,Koichi,sit_silent,"too busy to feel",beige+ash,numbness,0.74
-4,00:07:10,2:House,Norie,tea_pour,"duty in lieu of affection",white+tan,polite,0.47
-
+frame_id,timestamp,scene_id,character,gesture,subtext,aesthetic_palette,emotional_tone,social_tension_score,line_of_dialogue
+0,00:00:00,1:Arrival,Shukichi,enter,family reunion and distance,soft+warm,sadness,0.6,"It’s been too long since we were all together."
+1,00:05:20,1:Lunch,Hara,serve,care and obligation,beige+earth,quiet,0.5,"Eat well, please."
+2,00:10:40,2:Conversation,Noriko,listen,unspoken pain,gray+blue,melancholy,0.7,"Sometimes words aren’t enough."
+3,00:15:55,2:Visit,Shige,walk,aging and neglect,pale+muted,lonely,0.65,"They don’t have time for us anymore."
+4,00:21:30,3:Departure,Tom,goodbye,resignation,sunset+orange,bittersweet,0.6,"Take care of yourself."
+5,00:25:45,3:Reflection,Shukichi,sit,loss and memory,soft+gray,contemplative,0.7,"What remains when they’re gone?"
+6,00:30:00,End,Family Home,silence,endings,mute+black,quiet,0.8,"The story continues in absence."

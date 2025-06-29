@@ -1,7 +1,8 @@
-frame_id,timestamp,scene_id,character,gesture,subtext,aesthetic_palette,emotional_tone,social_tension_score,line_of_dialogue
-0,00:00:00,1:Midnight,Officer 223,run,"chasing meaning",neon+rain,urgency,0.65,
-1,00:00:45,1:Midnight,Woman in blonde wig,walk_alone,"concealment as identity",red+black,paranoia,0.79,
-2,00:03:17,2:Snack Bar,223,order_pineapple,"ritual to delay grief",yellow+chrome,bittersweet,0.44,"Every can expires someday..."
-3,00:06:40,3:Nightclub,Woman,glance_back,"wound wrapped in allure",blue+violet,fragility,0.72,
-4,00:07:55,4:Apartment,223,phone_call,"repeating the moment",cold+white,hope,0.41,
-
+id,timestamp,mode,subject,gesture,color_palette,emotion,scene_subtext,class_tension
+0,00:00:00,static,He Qiwu,run,neon+rain,melancholy,loneliness in the city,0.7
+1,00:05:12,static,Faye,cleaning,bright+pastel,hopeful,escaping boredom through daydreams,0.5
+2,00:10:35,dynamic,He Qiwu,glance,blue+purple,nostalgic,yearning for connection,0.65
+3,00:14:22,dynamic,Faye,texting,neon+pink,playful,secretly hopeful,0.4
+4,00:20:45,static,Faye,walk,gray+white,melancholy,freedom and uncertainty,0.6
+5,00:25:10,static,He Qiwu,smile,soft+gold,peaceful,reconciliation,0.55
+6,00:30:00,dynamic,He Qiwu & Faye,together,sunrise+warm,hopeful,new beginnings,0.3
