@@ -1,0 +1,7 @@
+frame_id,timestamp,scene_id,character,gesture,subtext,aesthetic_palette,emotional_tone,social_tension_score,line_of_dialogue
+0,00:00:00,1:Midnight,Officer 223,run,"chasing meaning",neon+rain,urgency,0.65,
+1,00:00:45,1:Midnight,Woman in blonde wig,walk_alone,"concealment as identity",red+black,paranoia,0.79,
+2,00:03:17,2:Snack Bar,223,order_pineapple,"ritual to delay grief",yellow+chrome,bittersweet,0.44,"Every can expires someday..."
+3,00:06:40,3:Nightclub,Woman,glance_back,"wound wrapped in allure",blue+violet,fragility,0.72,
+4,00:07:55,4:Apartment,223,phone_call,"repeating the moment",cold+white,hope,0.41,
+

@@ -1,0 +1,7 @@
+frame_id,timestamp,scene_id,character,gesture,subtext,aesthetic_palette,emotional_tone,social_tension_score
+0,00:00:00,1:Departure,Parents,prepare_luggage,"burden unspoken",cotton+sky,quiet,0.42
+1,00:01:33,1:Train,Shukichi,look_out_window,"distance forming",gray+blue,resignation,0.38
+2,00:04:00,2:Arrival,Children,bow,"ritual masks disinterest",navy+white,awkwardness,0.61
+3,00:06:45,2:House,Koichi,sit_silent,"too busy to feel",beige+ash,numbness,0.74
+4,00:07:10,2:House,Norie,tea_pour,"duty in lieu of affection",white+tan,polite,0.47
+

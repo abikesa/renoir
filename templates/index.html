@@ -6,22 +6,39 @@
     body { font-family: Georgia; background: #f5f0eb; padding: 2em; }
     .frame { border: 2px solid #999; padding: 1em; margin-top: 1em; }
     .modes button { margin-right: 10px; }
+    .selector { margin-top: 1em; }
   </style>
 </head>
 <body>
   <h1>🎥 The Inheritance Engine</h1>
+
+  <!-- DATA SOURCE SELECTOR -->
+  <div class="selector">
+    <label for="source">Choose a film:</label>
+    <select id="source" onchange="changeSource()">
+      {% for src in sources %}
+        <option value="{{ src }}" {% if src == current_source %}selected{% endif %}>
+          {{ src.replace('.csv','').replace('-', ' ').title() }}
+        </option>
+      {% endfor %}
+    </select>
+  </div>
+
   <div class="modes">
     <button onclick="loadMode('static')">🖼 Pierre (Static)</button>
     <button onclick="loadMode('dynamic')">🎬 Jean (Dynamic)</button>
     <button onclick="loadRandom()">🔀 Random Frame</button>
   </div>
+
   <div class="frame" id="frame-box">
-    <em>Loading frame>...</em>
+    <em>Loading frame...</em>
   </div>
 
-  <p><a href="/scenario/0">🌀 View Ukusoma Scenario Loop</a></p>
+  <p><a href="/scenario/0?source={{ current_source }}">🌀 View Ukusoma Scenario Loop</a></p>
 
   <script>
+    let currentSource = "{{ current_source }}";
+
     function renderFrame(data) {
       document.getElementById('frame-box').innerHTML = `
         <h2>${data.subject} — ${data.gesture}</h2>
@@ -33,19 +50,23 @@
     }
 
     function loadMode(mode) {
-      fetch('/mode/' + mode)
-        .then(response => response.json())
+      fetch(`/mode/${mode}?source=${currentSource}`)
+        .then(res => res.json())
         .then(data => renderFrame(data));
     }
 
     function loadRandom() {
-      fetch('/random')
-        .then(response => response.json())
+      fetch(`/random?source=${currentSource}`)
+        .then(res => res.json())
         .then(data => renderFrame(data));
+    }
+
+    function changeSource() {
+      const newSource = document.getElementById('source').value;
+      window.location.href = `/?source=${newSource}`;
     }
 
     loadRandom();
   </script>
 </body>
 </html>
-
