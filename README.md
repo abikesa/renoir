@@ -1,5 +1,5 @@
-Love the energy! Here’s a sharp, polished README draft for your project that captures the vibe and the tech:
-
+> "He inherited his father's visual sensibility (`.csv` rows, agents) and made it temporal (interactions over time)."
+> 
 ---
 
 # Ukusoma Scenario Loop — The Inheritance Engine
