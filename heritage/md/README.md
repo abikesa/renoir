@@ -717,3 +717,151 @@ Let me know if you want:
 * YAML export of a selected scenario for literary flair
 
 
+## D
+You're 90% there — and this is a great lightweight Flask app setup.
+
+But let’s **bulletproof it for deployment on Render**, especially since you're using `pandas` and CSVs. Here's what you need to fix or confirm:
+
+---
+
+## ✅ 1. `requirements.txt`
+
+You **must** include:
+
+```txt
+flask
+pandas
+gunicorn
+```
+
+> `gunicorn` is the production-ready WSGI server. Render uses it to run your app — `flask run` won't cut it in prod.
+
+---
+
+## ✅ 2. `render.yaml`
+
+You already know this, but make sure it's like this:
+
+```yaml
+services:
+  - type: web
+    name: renoir
+    env: python
+    plan: free
+    branch: father-son-esprit
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
+    autoDeploy: true
+```
+
+---
+
+## ✅ 3. File structure
+
+Make sure your project has:
+
+```
+/ (repo root)
+├── app.py
+├── inheritance.csv
+├── requirements.txt
+├── render.yaml
+└── templates/
+    ├── index.html
+    └── scenario.html
+```
+
+> `render_template('index.html')` requires a `/templates` folder, not just a random HTML file.
+
+---
+
+## ⚠️ 4. File path fix (for CSV)
+
+Change:
+
+```python
+data = pd.read_csv("inheritance.csv")
+```
+
+To:
+
+```python
+import os
+data = pd.read_csv(os.path.join(os.path.dirname(__file__), "inheritance.csv"))
+```
+
+Why? Because **Render's working directory can vary**, and hardcoding relative paths often fails in production.
+
+---
+
+## ✅ 5. Port binding (optional)
+
+Flask in dev uses `localhost:5000`, but **Render wants you to bind to `0.0.0.0` and use `PORT`**.
+
+You're using Gunicorn, so you're safe — but just in case you ever fall back to `flask run`, use this:
+
+```python
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 5000)))
+```
+
+---
+
+## 🎯 Final Steps
+
+* `git add . && git commit -m "prepare for render"`
+* Push to GitHub
+* Let Render auto-deploy
+* Visit your app at: `https://renoir.onrender.com` (or similar)
+
+---
+
+### Want a custom 404 page, logging, or `/health` endpoint?
+
+Happy to add it. Your app's shape is already great for storytelling or simulation work.
+
+## E
+🔥 **Yes! That’s a great way to think about it.**
+
+---
+
+## 🧠 render.yaml = Your Remote CLI for Render
+
+It's like saying:
+
+> “Hey Render, don’t make me click buttons. Just run **this script** every time I push.”
+
+So in CLI terms:
+
+| **render.yaml**    | **Equivalent CLI / Local Behavior**             |
+| ------------------ | ----------------------------------------------- |
+| `env: python`      | Set Python environment                          |
+| `buildCommand`     | Like running `pip install` locally              |
+| `startCommand`     | Like running `gunicorn app:app` locally         |
+| `branch: main`     | Like saying "deploy from `main` branch"         |
+| `autoDeploy: true` | Like running `git push` and triggering `deploy` |
+
+---
+
+## 🔁 Without `render.yaml`:
+
+* Render guesses your stack
+* You click through menus
+* It’s easy to misconfigure (as you’ve seen)
+
+## ✅ With `render.yaml`:
+
+* You codify the infrastructure
+* You version it with Git
+* Every team member gets the same deployment behavior
+* No more clicking through the UI unless debugging
+
+---
+
+## ⚔️ So yes — it's like `docker-compose.yml`, `Procfile`, or `.gitlab-ci.yml`:
+
+It’s your **remote runtime contract.**
+Tell Render how to build and run your app once — and never click again.
+
+Want me to help you break your app into frontend/backend via `render.yaml`? Or add a Postgres DB in one line? Easy.
+
