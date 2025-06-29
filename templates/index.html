@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inheritance Engine</title>
+  <style>
+    body { font-family: Georgia; background: #f5f0eb; padding: 2em; }
+    .frame { border: 2px solid #999; padding: 1em; margin-top: 1em; }
+    .modes button { margin-right: 10px; }
+  </style>
+</head>
+<body>
+  <h1>🎥 The Inheritance Engine</h1>
+  <div class="modes">
+    <button onclick="loadMode('static')">🖼 Pierre (Static)</button>
+    <button onclick="loadMode('dynamic')">🎬 Jean (Dynamic)</button>
+    <button onclick="loadRandom()">🔀 Random Frame</button>
+  </div>
+  <div class="frame" id="frame-box">
+    <em>Loading frame>...</em>
+  </div>
+
+  <p><a href="/scenario/0">🌀 View Ukusoma Scenario Loop</a></p>
+
+  <script>
+    function renderFrame(data) {
+      document.getElementById('frame-box').innerHTML = `
+        <h2>${data.subject} — ${data.gesture}</h2>
+        <p><strong>Palette:</strong> ${data.color_palette}</p>
+        <p><strong>Emotion:</strong> ${data.emotion}</p>
+        <p><strong>Subtext:</strong> ${data.scene_subtext}</p>
+        <p><strong>Class Tension:</strong> ${data.class_tension}</p>
+      `;
+    }
+
+    function loadMode(mode) {
+      fetch('/mode/' + mode)
+        .then(response => response.json())
+        .then(data => renderFrame(data));
+    }
+
+    function loadRandom() {
+      fetch('/random')
+        .then(response => response.json())
+        .then(data => renderFrame(data));
+    }
+
+    loadRandom();
+  </script>
+</body>
+</html>
+

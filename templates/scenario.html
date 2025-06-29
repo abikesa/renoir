@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ukusoma Scenario Loop</title>
+  <style>
+    body { background: #1e1e1e; color: #eee; font-family: Garamond; padding: 2em; }
+    .frame { margin-bottom: 2em; border-bottom: 1px solid #555; padding-bottom: 1em; }
+    .frame h3 { color: #ffb347; }
+    .subtext { font-style: italic; color: #ccc; }
+    a { color: #ffcc88; }
+  </style>
+</head>
+<body>
+  <h1>🌀 Ukusoma Scenario — Recursive Frame Loop</h1>
+
+  {% for frame in frames %}
+    <div class="frame">
+      <h3>{{ loop.index }}. {{ frame.subject }} – {{ frame.gesture }}</h3>
+      <p><strong>Emotion:</strong> {{ frame.emotion }}</p>
+      <p><strong>Palette:</strong> {{ frame.color_palette }}</p>
+      <p class="subtext">“{{ frame.scene_subtext }}”</p>
+      <p><strong>Tension:</strong> {{ frame.class_tension }}</p>
+    </div>
+  {% endfor %}
+
+  <p><a href="/scenario/{{ frames[0]['id'] + 5 }}">🔁 Next Loop</a></p>
+</body>
+<footer>
+  <p>Created by <a href="../heritage/html/accreditation.html">Your Name</a></p>
+</footer>
+</html>
+
