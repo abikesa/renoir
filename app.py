@@ -6,10 +6,6 @@ import random
 app = Flask(__name__)
 data = pd.read_csv(os.path.join(os.path.dirname(__file__), "inheritance.csv"))
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 5000)))
-
-
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -33,6 +29,3 @@ def mode_view(mode):
 def scenario(start_id):
     frames = data.iloc[start_id:start_id + 5].to_dict(orient='records')
     return render_template('scenario.html', frames=frames)
-
-if __name__ == '__main__':
-    app.run(debug=True)
