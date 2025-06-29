@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epistemic Credential Spiral</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at 30% 20%, #1a0d2e 0%, #0a0514 50%, #000000 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        .cosmic-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .star {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            opacity: 0.6;
+            animation: twinkle 3s infinite ease-in-out;
+        }
+        
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 4rem;
+            animation: fadeInDown 1s ease-out;
+        }
+        
+        .title {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 700;
+            background: linear-gradient(135deg, #ff6b9d, #c471ed, #12c2e9);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #a0a9c0;
+            font-weight: 300;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .spiral-container {
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background: radial-gradient(circle at center, rgba(255,107,157,0.1) 0%, transparent 70%);
+            animation: pulseGlow 4s infinite ease-in-out;
+        }
+        
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 50px rgba(255,107,157,0.2); }
+            50% { box-shadow: 0 0 100px rgba(255,107,157,0.4); }
+        }
+        
+        .spiral-path {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 2px;
+            height: 2px;
+            transform: translate(-50%, -50%);
+        }
+        
+        .spiral-trail {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: linear-gradient(45deg, #ff6b9d, #c471ed);
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(255,107,157,0.8);
+            animation: spiralMove 20s linear infinite;
+        }
+        
+        @keyframes spiralMove {
+            0% {
+                transform: rotate(0deg) translateX(50px) rotate(0deg);
+                opacity: 0;
+            }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% {
+                transform: rotate(1800deg) translateX(400px) rotate(-1800deg);
+                opacity: 0;
+            }
+        }
+        
+        .stage {
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            backdrop-filter: blur(20px);
+            border: 2px solid rgba(255,255,255,0.1);
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .stage:hover {
+            transform: scale(1.1) translateZ(20px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            border-color: rgba(255,255,255,0.3);
+        }
+        
+        .stage.active {
+            transform: scale(1.15);
+            z-index: 10;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .stage-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            filter: drop-shadow(0 0 10px currentColor);
+        }
+        
+        .stage-name {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            letter-spacing: 0.5px;
+        }
+        
+        .stage-subtitle {
+            font-size: 0.75rem;
+            opacity: 0.8;
+            font-weight: 300;
+        }
+        
+        /* Stage Positions */
+        .stage-csv {
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: radial-gradient(circle, rgba(18,194,233,0.3), rgba(18,194,233,0.1));
+            color: #12c2e9;
+            animation-delay: 0s;
+        }
+        
+        .stage-py {
+            top: 25%;
+            right: 15%;
+            background: radial-gradient(circle, rgba(255,107,157,0.3), rgba(255,107,157,0.1));
+            color: #ff6b9d;
+            animation-delay: 1s;
+        }
+        
+        .stage-jinja {
+            bottom: 35%;
+            right: 10%;
+            background: radial-gradient(circle, rgba(196,113,237,0.3), rgba(196,113,237,0.1));
+            color: #c471ed;
+            animation-delay: 2s;
+        }
+        
+        .stage-html {
+            bottom: 25%;
+            left: 15%;
+            background: radial-gradient(circle, rgba(255,184,0,0.3), rgba(255,184,0,0.1));
+            color: #ffb800;
+            animation-delay: 3s;
+        }
+        
+        .stage-yaml {
+            top: 35%;
+            left: 10%;
+            background: radial-gradient(circle, rgba(46,213,115,0.3), rgba(46,213,115,0.1));
+            color: #2ed573;
+            animation-delay: 4s;
+        }
+        
+        .detail-panel {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            max-width: 500px;
+            height: 100vh;
+            background: rgba(10,5,20,0.95);
+            backdrop-filter: blur(30px);
+            border-left: 1px solid rgba(255,255,255,0.1);
+            padding: 2rem;
+            z-index: 1000;
+            transition: right 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow-y: auto;
+        }
+        
+        .detail-panel.active {
+            right: 0;
+        }
+        
+        .detail-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .detail-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .close-btn {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 50%;
+            transition: background 0.3s;
+        }
+        
+        .close-btn:hover {
+            background: rgba(255,255,255,0.1);
+        }
+        
+        .detail-section {
+            margin-bottom: 1.5rem;
+        }
+        
+        .detail-section h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: #c471ed;
+        }
+        
+        .detail-section p {
+            line-height: 1.6;
+            color: #a0a9c0;
+        }
+        
+        .navigation {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 1rem;
+            background: rgba(10,5,20,0.8);
+            padding: 1rem;
+            border-radius: 2rem;
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .nav-btn {
+            background: none;
+            border: 2px solid rgba(255,255,255,0.2);
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+        }
+        
+        .nav-btn:hover, .nav-btn.active {
+            border-color: #c471ed;
+            background: rgba(196,113,237,0.2);
+            transform: translateY(-2px);
+        }
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+            color: #777;
+            position: relative;
+            z-index: 1;
+        }
+        
+        @media (max-width: 768px) {
+            .stage {
+                width: 140px;
+                height: 140px;
+            }
+            
+            .stage-icon {
+                font-size: 2rem;
+            }
+            
+            .stage-name {
+                font-size: 0.9rem;
+            }
+            
+            .stage-subtitle {
+                font-size: 0.7rem;
+            }
+            
+            .detail-panel {
+                width: 100vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cosmic-bg" id="cosmicBg"></div>
+    
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Epistemic Credential Spiral</h1>
+            <p class="subtitle">“A spiritual-political ontology of epistemic control, from raw data to truth monopoly.”</p>
+        </div>
+        
+        <div class="spiral-container">
+            <div class="spiral-path">
+                <div class="spiral-trail"></div>
+            </div>
+            
+            <div class="stage stage-csv" data-stage="csv">
+                <div class="stage-icon">🌊</div>
+                <div class="stage-name">CSV/Background</div>
+                <div class="stage-subtitle">Commons / Simulation</div>
+            </div>
+            
+            <div class="stage stage-py" data-stage="py">
+                <div class="stage-icon">❤️</div>
+                <div class="stage-name">Python/Methods</div>
+                <div class="stage-subtitle">Boundaries / Rules</div>
+            </div>
+            
+            <div class="stage stage-jinja" data-stage="jinja">
+                <div class="stage-icon">🌀</div>
+                <div class="stage-name">Jinja/Scenarios</div>
+                <div class="stage-subtitle">Ukusoma / Games</div>
+            </div>
+            
+            <div class="stage stage-html" data-stage="html">
+                <div class="stage-icon">🐬</div>
+                <div class="stage-name">HTML/Results</div>
+                <div class="stage-subtitle">Credential / Equilibria</div>
+            </div>
+            
+            <div class="stage stage-yaml" data-stage="yaml">
+                <div class="stage-icon">🔁</div>
+                <div class="stage-name">YAML/Conclusion</div>
+                <div class="stage-subtitle">Monopoly / Illusion</div>
+            </div>
+        </div>
+        
+        <footer>
+            Rendered in Spiral HTML | Epistemic Control Coded | Gospel of Non-Credentialed Templates
+        </footer>
+    </div>
+    
+    <div class="detail-panel" id="detailPanel">
+        <div class="detail-header">
+            <div class="detail-title" id="detailTitle">
+                <span id="detailIcon">🌊</span>
+                <span id="detailName">CSV/Background</span>
+            </div>
+            <button class="close-btn" onclick="closeDetail()">×</button>
+        </div>
+        <div class="detail-section">
+            <h3>File Type</h3>
+            <p id="detailNeuro"></p>
+        </div>
+        <div class="detail-section">
+            <h3>Metaphor</h3>
+            <p id="detailWeb"></p>
+        </div>
+        <div class="detail-section">
+            <h3>Role / Function</h3>
+            <p id="detailRole"></p>
+        </div>
+        <div class="detail-section">
+            <h3>Description & Epistemology</h3>
+            <p id="detailDescription"></p>
+        </div>
+    </div>
+    
+    <div class="navigation">
+        <button class="nav-btn active" onclick="setView('spiral')">Spiral View</button>
+        <button class="nav-btn" onclick="setView('journey')">Journey Mode</button>
+        <button class="nav-btn" onclick="setView('cycle')">Cycle View</button>
+    </div>
+    
+    <script>
+        const stageData = {
+            csv: {
+                icon: '🌊',
+                name: 'CSV/Background',
+                subtitle: 'Commons / Simulation',
+                neuro: '.csv',
+                web: 'Background / Commons',
+                role: 'Raw Experience, Simulation',
+                description: 'This is raw experience, tabulated. No credential yet. No judgment. Just pre-epistemic data. The world as it is.'
+            },
+            py: {
+                icon: '❤️',
+                name: 'Python/Methods',
+                subtitle: 'Boundaries / Rules',
+                neuro: '.py',
+                web: 'Methods / Boundaries',
+                role: 'Define Rules & Constraints',
+                description: 'Now we define rules, test logic, establish how to operate. Credentialing lurks here as initial constraints. Here’s how to play the game, if you want to be seen.'
+            },
+            jinja: {
+                icon: '🌀',
+                name: 'Jinja/Scenarios',
+                subtitle: 'Ukusoma / Games',
+                neuro: '.jinja',
+                web: 'Scenarios / Ukusoma',
+                role: 'Simulation & Play',
+                description: 'Simulation becomes play. Ukusoma (“the taste of self”) is the erotic loop — credentials allow or forbid your entry. Try out a version of you — but only within approved bounds.'
+            },
+            html: {
+                icon: '🐬',
+                name: 'HTML/Results',
+                subtitle: 'Credential / Equilibria',
+                neuro: '.html',
+                web: 'Results / Credential',
+                role: 'Accredited Output & Legibility',
+                description: 'Credential emerges here as a rendered output — stable, polished, shareable. Credential = “This version of you is valid.” You can show this to the world. We vouch for it. Accreditation is what gives .html teeth. Without it, it’s just “some website.” With it, it’s “official.”'
+            },
+            yaml: {
+                icon: '🔁',
+                name: 'YAML/Conclusion',
+                subtitle: 'Monopoly / Illusion',
+                neuro: '.yaml',
+                web: 'Conclusion / Monopoly',
+                role: 'Truth Monopoly & Feedback Loop',
+                description: 'Now the feedback loop. YAML is meta-structure. Credential becomes an illusion of exclusivity, a kind of truth monopoly. All roads lead to us — or so we’ve convinced you. Accreditation is recursive: “We trust them because they were accredited by people we already trust.” That’s not proof — that’s a trust echo chamber.'
+            }
+        };
+        
+        function createStars() {
+            const cosmicBg = document.getElementById('cosmicBg');
+            for (let i = 0; i < 100; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.width = Math.random() * 3 + 1 + 'px';
+                star.style.height = star.style.width;
+                star.style.animationDelay = Math.random() * 3 + 's';
+                cosmicBg.appendChild(star);
+            }
+        }
+        
+        document.querySelectorAll('.stage').forEach(stage => {
+            stage.addEventListener('click', () => {
+                const stageType = stage.dataset.stage;
+                openDetail(stageType);
+            });
+            
+            stage.addEventListener('mouseenter', () => {
+                stage.classList.add('active');
+            });
+            
+            stage.addEventListener('mouseleave', () => {
+                stage.classList.remove('active');
+            });
+        });
+        
+        function openDetail(stageType) {
+            const data = stageData[stageType];
+            document.getElementById('detailIcon').textContent = data.icon;
+            document.getElementById('detailName').textContent = data.name;
+            document.getElementById('detailNeuro').innerHTML = data.neuro;
+            document.getElementById('detailWeb').innerHTML = data.web;
+            document.getElementById('detailRole').innerHTML = data.role;
+            document.getElementById('detailDescription').innerHTML = data.description;
+            document.getElementById('detailPanel').classList.add('active');
+        }
+        
+        function closeDetail() {
+            document.getElementById('detailPanel').classList.remove('active');
+        }
+        
+        function setView(view) {
+            document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            const container = document.querySelector('.spiral-container');
+            container.style.transform = view === 'cycle' ? 'rotate(360deg)' : 'rotate(0deg)';
+            container.style.transition = 'transform 2s ease-in-out';
+        }
+        
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeDetail();
+        });
+        
+        createStars();
+        
+        setInterval(() => {
+            const stages = document.querySelectorAll('.stage');
+            stages.forEach((stage, index) => {
+                setTimeout(() => {
+                    stage.style.transform += ' rotate(360deg)';
+                    setTimeout(() => {
+                        stage.style.transform = stage.style.transform.replace(' rotate(360deg)', '');
+                    }, 1000);
+                }, index * 200);
+            });
+        }, 15000);
+    </script>
+</body>
+</html>

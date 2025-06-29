@@ -1,0 +1,501 @@
+id,timestamp,mode,subject,gesture,color_palette,emotion,scene_subtext,class_tension
+0,00:00:00,static,soldier,wait,pink+white,serenity,truth in disguise,0.38
+1,00:00:01,dynamic,mechanic,nod,lavender+ivory,serenity,caressing the ordinary,0.27
+2,00:00:02,static,lover,glance,gray+navy,serenity,caressing the ordinary,0.1
+3,00:00:03,static,hunter,smile,blue+grey,awe,truth in disguise,0.91
+4,00:00:04,dynamic,waitress,dance,pink+white,love,the world still soft,0.73
+5,00:00:05,static,actor,pause,white+emerald,discomfort,eyeing invisible lines,0.92
+6,00:00:06,static,dancer,step,marble+ash,awe,performing charm,0.86
+7,00:00:07,static,philosopher,stare,gray+navy,serenity,pretending to care,0.36
+8,00:00:08,static,lover,dance,olive+brown,hope,waiting for permission,0.71
+9,00:00:09,static,actor,pause,red+charcoal,discomfort,performing charm,0.28
+10,00:00:10,dynamic,mechanic,smile,blue+grey,bliss,spinning under sunlight,0.6
+11,00:00:11,dynamic,actor,wait,marble+ash,tension,caressing the ordinary,0.35
+12,00:00:12,dynamic,actor,wait,lavender+ivory,love,the world still soft,0.13
+13,00:00:13,static,mechanic,reach,pink+white,serenity,caught in breathless grace,0.57
+14,00:00:14,dynamic,hunter,smile,marble+ash,love,pretending to care,0.82
+15,00:00:15,static,soldier,collapse,gray+navy,melancholy,caressing the ordinary,0.84
+16,00:00:16,dynamic,mother,turn,blue+grey,despair,serving without being seen,0.0
+17,00:00:17,static,philosopher,turn,gold+coral,discomfort,serving without being seen,0.7
+18,00:00:18,dynamic,child,stare,marble+ash,bliss,eyeing invisible lines,0.11
+19,00:00:19,dynamic,philosopher,reach,blue+grey,tension,spinning under sunlight,0.45
+20,00:00:20,static,mother,step,gold+coral,tenderness,spinning under sunlight,0.57
+21,00:00:21,static,dancer,dance,teal+ochre,contempt,truth in disguise,0.5
+22,00:00:22,dynamic,lover,reach,marble+ash,tension,pretending to care,0.17
+23,00:00:23,dynamic,mechanic,wait,gray+navy,contempt,eternal joy,0.05
+24,00:00:24,dynamic,actor,pause,olive+brown,contempt,eternal joy,0.71
+25,00:00:25,dynamic,mother,nod,red+charcoal,love,the world still soft,0.0
+26,00:00:26,static,mother,glance,gold+coral,fatigue,truth in disguise,0.49
+27,00:00:27,static,hunter,sigh,olive+brown,melancholy,beauty hiding decay,0.23
+28,00:00:28,dynamic,mother,sigh,indigo+bronze,fatigue,time isn’t yours,0.27
+29,00:00:29,dynamic,actor,kiss,sepia+black,despair,caught in breathless grace,0.07
+30,00:00:30,static,servant,step,indigo+bronze,contempt,performing charm,0.81
+31,00:00:31,dynamic,aristocrat,nod,yellow+cream,discomfort,performing charm,0.81
+32,00:00:32,dynamic,painter,kiss,marble+ash,discomfort,duty without love,0.01
+33,00:00:33,dynamic,dancer,turn,white+emerald,awe,eyeing invisible lines,0.74
+34,00:00:34,static,aristocrat,sigh,blue+grey,love,time isn’t yours,0.37
+35,00:00:35,dynamic,soldier,nod,yellow+cream,restlessness,waiting for permission,0.83
+36,00:00:36,static,bather,dance,gray+navy,contempt,beauty hiding decay,0.77
+37,00:00:37,dynamic,philosopher,wait,lavender+ivory,restlessness,truth in disguise,0.71
+38,00:00:38,static,lover,reach,gold+coral,contempt,caught in breathless grace,0.32
+39,00:00:39,static,soldier,collapse,indigo+bronze,tenderness,caught in breathless grace,0.9
+40,00:00:40,dynamic,mechanic,turn,red+charcoal,love,serving without being seen,0.79
+41,00:00:41,dynamic,bather,turn,teal+ochre,love,caught in breathless grace,0.24
+42,00:00:42,static,waitress,wait,olive+brown,joy,pretending to care,0.73
+43,00:00:43,static,bather,reach,copper+sky,contempt,serving without being seen,0.43
+44,00:00:44,dynamic,mechanic,stare,blue+grey,joy,spinning under sunlight,0.59
+45,00:00:45,static,child,reach,gold+coral,joy,caressing the ordinary,0.95
+46,00:00:46,dynamic,child,step,lavender+ivory,awe,performing charm,0.52
+47,00:00:47,static,actor,wait,red+charcoal,restlessness,the world still soft,0.78
+48,00:00:48,static,hunter,kiss,teal+ochre,tension,waiting for permission,0.58
+49,00:00:49,static,actor,reach,red+charcoal,serenity,bound by rules,0.66
+50,00:00:50,static,actor,step,indigo+bronze,discomfort,eyeing invisible lines,0.1
+51,00:00:51,dynamic,lover,nod,indigo+bronze,bliss,eyeing invisible lines,0.27
+52,00:00:52,static,painter,laugh,gray+navy,awe,waiting for permission,0.89
+53,00:00:53,dynamic,waitress,stare,pink+white,restlessness,duty without love,0.62
+54,00:00:54,dynamic,painter,turn,marble+ash,hope,the world still soft,0.76
+55,00:00:55,static,gardener,reach,marble+ash,hope,eyeing invisible lines,0.18
+56,00:00:56,dynamic,aristocrat,kiss,lavender+ivory,melancholy,eyeing invisible lines,0.02
+57,00:00:57,dynamic,mother,gesture,gray+navy,serenity,pretending to care,0.7
+58,00:00:58,static,actor,pause,rose+peach,tenderness,bound by rules,0.2
+59,00:00:59,dynamic,mother,nod,teal+ochre,contempt,beauty hiding decay,0.23
+60,00:01:00,static,mother,collapse,teal+ochre,tenderness,waiting for permission,0.51
+61,00:01:01,static,dancer,turn,copper+sky,tenderness,bound by rules,0.42
+62,00:01:02,dynamic,mother,dance,copper+sky,resentment,serving without being seen,0.65
+63,00:01:03,dynamic,mother,smile,marble+ash,fatigue,caressing the ordinary,0.97
+64,00:01:04,static,gardener,step,indigo+bronze,love,spinning under sunlight,0.65
+65,00:01:05,static,waitress,stare,copper+sky,joy,performing charm,0.61
+66,00:01:06,static,mother,wait,teal+ochre,restlessness,waiting for permission,0.92
+67,00:01:07,static,gardener,stare,olive+brown,tension,time isn’t yours,0.95
+68,00:01:08,dynamic,actor,gesture,rose+peach,fatigue,time isn’t yours,0.63
+69,00:01:09,static,mother,reach,indigo+bronze,tension,serving without being seen,0.09
+70,00:01:10,static,philosopher,nod,marble+ash,bliss,the world still soft,0.23
+71,00:01:11,static,mechanic,step,pink+white,awe,eternal joy,0.34
+72,00:01:12,dynamic,child,pause,lavender+ivory,bliss,caught in breathless grace,0.19
+73,00:01:13,dynamic,hunter,gesture,marble+ash,love,eyeing invisible lines,0.5
+74,00:01:14,static,actor,reach,sepia+black,tension,the world still soft,0.11
+75,00:01:15,dynamic,mother,dance,gray+navy,resentment,serving without being seen,0.37
+76,00:01:16,dynamic,bather,kiss,blue+grey,contempt,truth in disguise,0.8
+77,00:01:17,dynamic,aristocrat,reach,gray+navy,restlessness,duty without love,0.03
+78,00:01:18,dynamic,soldier,wait,white+emerald,joy,time isn’t yours,0.7
+79,00:01:19,static,waitress,dance,marble+ash,tenderness,performing charm,0.05
+80,00:01:20,static,child,step,yellow+cream,contempt,beauty hiding decay,0.09
+81,00:01:21,static,gardener,wait,indigo+bronze,fatigue,waiting for permission,0.89
+82,00:01:22,dynamic,actor,pause,blue+grey,fatigue,truth in disguise,0.33
+83,00:01:23,dynamic,philosopher,dance,sepia+black,awe,bound by rules,0.18
+84,00:01:24,dynamic,dancer,wait,teal+ochre,restlessness,beauty hiding decay,0.96
+85,00:01:25,dynamic,soldier,reach,blue+grey,love,serving without being seen,0.31
+86,00:01:26,static,child,stare,sepia+black,tension,bound by rules,0.8
+87,00:01:27,static,hunter,reach,pink+white,resentment,eternal joy,0.55
+88,00:01:28,static,bather,turn,teal+ochre,hope,time isn’t yours,0.95
+89,00:01:29,static,lover,sigh,sepia+black,restlessness,serving without being seen,0.89
+90,00:01:30,static,lover,smile,lavender+ivory,hope,caressing the ordinary,0.05
+91,00:01:31,dynamic,aristocrat,laugh,teal+ochre,tension,caressing the ordinary,0.64
+92,00:01:32,dynamic,painter,smile,teal+ochre,contempt,truth in disguise,0.76
+93,00:01:33,dynamic,dancer,laugh,gray+navy,contempt,eyeing invisible lines,0.89
+94,00:01:34,dynamic,mother,glance,marble+ash,discomfort,the world still soft,0.49
+95,00:01:35,static,philosopher,smile,pink+white,hope,beauty hiding decay,0.42
+96,00:01:36,static,actor,sigh,indigo+bronze,fatigue,eternal joy,0.04
+97,00:01:37,dynamic,gardener,pause,lavender+ivory,melancholy,time isn’t yours,0.51
+98,00:01:38,static,philosopher,reach,blue+grey,love,pretending to care,0.52
+99,00:01:39,dynamic,bather,step,rose+peach,hope,spinning under sunlight,0.85
+100,00:01:40,dynamic,aristocrat,reach,pink+white,resentment,the world still soft,0.32
+101,00:01:41,static,mother,stare,copper+sky,restlessness,duty without love,0.84
+102,00:01:42,dynamic,actor,dance,rose+peach,awe,eternal joy,0.67
+103,00:01:43,dynamic,waitress,collapse,blue+grey,discomfort,performing charm,0.08
+104,00:01:44,dynamic,gardener,stare,olive+brown,hope,the world still soft,0.38
+105,00:01:45,static,servant,smile,teal+ochre,despair,beauty hiding decay,0.61
+106,00:01:46,dynamic,mother,sigh,indigo+bronze,tension,eyeing invisible lines,0.94
+107,00:01:47,dynamic,dancer,collapse,gold+coral,bliss,bound by rules,0.01
+108,00:01:48,dynamic,philosopher,reach,olive+brown,joy,pretending to care,0.17
+109,00:01:49,dynamic,bather,glance,lavender+ivory,melancholy,caressing the ordinary,0.66
+110,00:01:50,dynamic,lover,gesture,olive+brown,despair,waiting for permission,0.71
+111,00:01:51,static,bather,pause,red+charcoal,despair,bound by rules,0.95
+112,00:01:52,dynamic,servant,pause,olive+brown,awe,spinning under sunlight,0.68
+113,00:01:53,dynamic,hunter,sigh,red+charcoal,joy,bound by rules,0.95
+114,00:01:54,dynamic,bather,reach,olive+brown,serenity,eternal joy,0.34
+115,00:01:55,dynamic,hunter,gesture,lavender+ivory,tension,caught in breathless grace,0.92
+116,00:01:56,static,mechanic,turn,yellow+cream,melancholy,serving without being seen,0.81
+117,00:01:57,dynamic,waitress,stare,teal+ochre,awe,eternal joy,0.77
+118,00:01:58,static,lover,smile,pink+white,despair,caught in breathless grace,0.05
+119,00:01:59,dynamic,actor,stare,red+charcoal,bliss,the world still soft,0.43
+120,00:02:00,static,dancer,smile,red+charcoal,resentment,spinning under sunlight,0.43
+121,00:02:01,dynamic,dancer,glance,yellow+cream,restlessness,the world still soft,0.02
+122,00:02:02,dynamic,dancer,reach,yellow+cream,fatigue,spinning under sunlight,0.08
+123,00:02:03,dynamic,mechanic,reach,red+charcoal,tension,caressing the ordinary,0.54
+124,00:02:04,dynamic,dancer,pause,pink+white,despair,truth in disguise,0.6
+125,00:02:05,static,bather,nod,sepia+black,contempt,performing charm,0.7
+126,00:02:06,static,soldier,gesture,yellow+cream,love,beauty hiding decay,0.52
+127,00:02:07,static,painter,sigh,lavender+ivory,fatigue,truth in disguise,0.49
+128,00:02:08,static,child,laugh,white+emerald,tenderness,time isn’t yours,0.91
+129,00:02:09,dynamic,hunter,glance,lavender+ivory,awe,time isn’t yours,0.44
+130,00:02:10,static,hunter,reach,gold+coral,tenderness,waiting for permission,0.15
+131,00:02:11,static,dancer,nod,marble+ash,awe,eyeing invisible lines,0.04
+132,00:02:12,static,child,glance,gray+navy,melancholy,truth in disguise,0.69
+133,00:02:13,dynamic,mother,stare,teal+ochre,restlessness,serving without being seen,0.96
+134,00:02:14,static,soldier,pause,blue+grey,fatigue,spinning under sunlight,0.52
+135,00:02:15,dynamic,lover,sigh,yellow+cream,awe,waiting for permission,0.14
+136,00:02:16,static,lover,nod,yellow+cream,restlessness,eternal joy,0.29
+137,00:02:17,dynamic,actor,wait,lavender+ivory,hope,eternal joy,0.68
+138,00:02:18,static,dancer,sigh,yellow+cream,joy,pretending to care,0.07
+139,00:02:19,dynamic,lover,laugh,red+charcoal,contempt,beauty hiding decay,0.08
+140,00:02:20,dynamic,child,glance,marble+ash,contempt,eyeing invisible lines,0.34
+141,00:02:21,dynamic,bather,sigh,teal+ochre,love,waiting for permission,0.1
+142,00:02:22,static,dancer,kiss,marble+ash,hope,duty without love,0.82
+143,00:02:23,static,mechanic,kiss,marble+ash,melancholy,caressing the ordinary,0.69
+144,00:02:24,dynamic,servant,sigh,blue+grey,hope,caressing the ordinary,0.38
+145,00:02:25,dynamic,philosopher,dance,red+charcoal,resentment,beauty hiding decay,0.46
+146,00:02:26,dynamic,painter,dance,copper+sky,serenity,bound by rules,0.31
+147,00:02:27,dynamic,gardener,sigh,gold+coral,contempt,waiting for permission,0.36
+148,00:02:28,static,hunter,smile,gold+coral,awe,serving without being seen,0.72
+149,00:02:29,static,dancer,gesture,yellow+cream,restlessness,the world still soft,0.37
+150,00:02:30,static,aristocrat,dance,indigo+bronze,discomfort,performing charm,0.47
+151,00:02:31,static,mother,nod,rose+peach,melancholy,serving without being seen,0.94
+152,00:02:32,dynamic,servant,gesture,yellow+cream,tension,bound by rules,0.9
+153,00:02:33,static,child,collapse,copper+sky,fatigue,eyeing invisible lines,0.7
+154,00:02:34,static,gardener,smile,teal+ochre,melancholy,beauty hiding decay,0.84
+155,00:02:35,static,child,wait,yellow+cream,tension,performing charm,0.06
+156,00:02:36,dynamic,gardener,smile,gold+coral,resentment,duty without love,0.14
+157,00:02:37,static,soldier,wait,marble+ash,love,waiting for permission,0.99
+158,00:02:38,static,philosopher,dance,white+emerald,tension,bound by rules,0.19
+159,00:02:39,dynamic,dancer,gesture,olive+brown,tension,truth in disguise,0.84
+160,00:02:40,static,bather,gesture,olive+brown,restlessness,performing charm,0.63
+161,00:02:41,dynamic,aristocrat,stare,teal+ochre,tenderness,bound by rules,0.87
+162,00:02:42,static,philosopher,kiss,pink+white,awe,waiting for permission,0.37
+163,00:02:43,dynamic,waitress,wait,rose+peach,despair,caressing the ordinary,0.7
+164,00:02:44,dynamic,gardener,glance,sepia+black,resentment,bound by rules,0.9
+165,00:02:45,static,hunter,wait,gray+navy,tension,waiting for permission,0.02
+166,00:02:46,static,mechanic,collapse,copper+sky,fatigue,truth in disguise,0.04
+167,00:02:47,static,philosopher,gesture,gray+navy,awe,caught in breathless grace,0.2
+168,00:02:48,static,mother,collapse,marble+ash,contempt,pretending to care,0.42
+169,00:02:49,dynamic,philosopher,laugh,lavender+ivory,discomfort,waiting for permission,0.82
+170,00:02:50,static,philosopher,glance,indigo+bronze,joy,pretending to care,0.78
+171,00:02:51,dynamic,philosopher,nod,lavender+ivory,melancholy,caressing the ordinary,0.77
+172,00:02:52,static,bather,pause,teal+ochre,love,duty without love,0.56
+173,00:02:53,static,bather,step,pink+white,tenderness,pretending to care,0.21
+174,00:02:54,static,philosopher,sigh,teal+ochre,contempt,the world still soft,0.6
+175,00:02:55,dynamic,child,turn,olive+brown,discomfort,truth in disguise,0.69
+176,00:02:56,static,painter,collapse,copper+sky,fatigue,bound by rules,0.89
+177,00:02:57,static,philosopher,collapse,red+charcoal,love,spinning under sunlight,0.64
+178,00:02:58,dynamic,aristocrat,sigh,teal+ochre,melancholy,eyeing invisible lines,0.53
+179,00:02:59,static,gardener,glance,gray+navy,discomfort,eternal joy,0.06
+180,00:03:00,static,gardener,glance,indigo+bronze,contempt,bound by rules,0.9
+181,00:03:01,static,gardener,gesture,marble+ash,tenderness,waiting for permission,0.87
+182,00:03:02,dynamic,hunter,gesture,rose+peach,restlessness,duty without love,0.97
+183,00:03:03,static,mother,step,yellow+cream,discomfort,bound by rules,0.22
+184,00:03:04,static,philosopher,turn,copper+sky,awe,truth in disguise,0.7
+185,00:03:05,dynamic,painter,stare,copper+sky,love,pretending to care,0.46
+186,00:03:06,dynamic,lover,pause,marble+ash,resentment,truth in disguise,0.21
+187,00:03:07,static,servant,reach,gold+coral,resentment,bound by rules,0.64
+188,00:03:08,static,bather,collapse,teal+ochre,contempt,caressing the ordinary,0.3
+189,00:03:09,static,mechanic,stare,olive+brown,resentment,spinning under sunlight,0.15
+190,00:03:10,dynamic,philosopher,nod,teal+ochre,contempt,eyeing invisible lines,0.28
+191,00:03:11,dynamic,hunter,wait,pink+white,joy,time isn’t yours,0.1
+192,00:03:12,static,soldier,turn,rose+peach,love,spinning under sunlight,0.26
+193,00:03:13,static,philosopher,smile,olive+brown,despair,truth in disguise,0.23
+194,00:03:14,static,soldier,wait,indigo+bronze,joy,duty without love,0.16
+195,00:03:15,dynamic,child,dance,sepia+black,joy,serving without being seen,0.74
+196,00:03:16,dynamic,lover,laugh,lavender+ivory,awe,eyeing invisible lines,0.76
+197,00:03:17,dynamic,bather,glance,olive+brown,love,waiting for permission,0.85
+198,00:03:18,dynamic,lover,dance,rose+peach,serenity,serving without being seen,0.4
+199,00:03:19,static,gardener,stare,gold+coral,tenderness,spinning under sunlight,0.41
+200,00:03:20,dynamic,servant,smile,white+emerald,love,eyeing invisible lines,0.32
+201,00:03:21,dynamic,painter,laugh,indigo+bronze,awe,truth in disguise,0.33
+202,00:03:22,dynamic,painter,gesture,blue+grey,fatigue,performing charm,0.88
+203,00:03:23,dynamic,bather,stare,white+emerald,bliss,serving without being seen,0.09
+204,00:03:24,dynamic,bather,collapse,sepia+black,hope,beauty hiding decay,0.78
+205,00:03:25,dynamic,soldier,pause,gold+coral,restlessness,time isn’t yours,0.76
+206,00:03:26,static,soldier,pause,marble+ash,awe,serving without being seen,0.02
+207,00:03:27,static,gardener,laugh,gold+coral,joy,duty without love,0.74
+208,00:03:28,dynamic,actor,collapse,red+charcoal,despair,performing charm,0.87
+209,00:03:29,static,bather,laugh,gold+coral,contempt,time isn’t yours,0.13
+210,00:03:30,dynamic,waitress,sigh,teal+ochre,love,caressing the ordinary,0.27
+211,00:03:31,dynamic,aristocrat,dance,pink+white,despair,spinning under sunlight,0.64
+212,00:03:32,static,soldier,collapse,gold+coral,tenderness,caught in breathless grace,0.25
+213,00:03:33,static,bather,stare,rose+peach,bliss,caressing the ordinary,0.94
+214,00:03:34,static,aristocrat,laugh,sepia+black,restlessness,performing charm,0.48
+215,00:03:35,dynamic,mother,kiss,yellow+cream,restlessness,caught in breathless grace,0.97
+216,00:03:36,dynamic,aristocrat,laugh,yellow+cream,serenity,caressing the ordinary,0.83
+217,00:03:37,dynamic,waitress,laugh,copper+sky,joy,eyeing invisible lines,0.05
+218,00:03:38,dynamic,aristocrat,wait,white+emerald,fatigue,caught in breathless grace,0.03
+219,00:03:39,static,servant,gesture,teal+ochre,discomfort,truth in disguise,0.39
+220,00:03:40,static,painter,step,blue+grey,fatigue,spinning under sunlight,0.46
+221,00:03:41,static,servant,collapse,marble+ash,joy,waiting for permission,0.74
+222,00:03:42,dynamic,mother,dance,sepia+black,joy,duty without love,0.53
+223,00:03:43,static,soldier,reach,lavender+ivory,melancholy,pretending to care,0.22
+224,00:03:44,static,servant,stare,teal+ochre,serenity,the world still soft,0.2
+225,00:03:45,dynamic,painter,kiss,white+emerald,fatigue,waiting for permission,0.21
+226,00:03:46,static,hunter,glance,pink+white,joy,time isn’t yours,0.35
+227,00:03:47,dynamic,child,step,gray+navy,restlessness,performing charm,0.82
+228,00:03:48,dynamic,child,wait,yellow+cream,tension,caressing the ordinary,0.7
+229,00:03:49,dynamic,bather,glance,white+emerald,bliss,caressing the ordinary,1.0
+230,00:03:50,dynamic,aristocrat,laugh,copper+sky,melancholy,the world still soft,0.63
+231,00:03:51,dynamic,lover,gesture,sepia+black,resentment,beauty hiding decay,0.97
+232,00:03:52,static,mother,sigh,olive+brown,despair,beauty hiding decay,0.16
+233,00:03:53,static,mother,step,gray+navy,melancholy,truth in disguise,0.91
+234,00:03:54,dynamic,soldier,pause,lavender+ivory,bliss,beauty hiding decay,0.06
+235,00:03:55,dynamic,aristocrat,smile,sepia+black,hope,eyeing invisible lines,0.64
+236,00:03:56,static,painter,stare,white+emerald,discomfort,time isn’t yours,0.35
+237,00:03:57,static,hunter,glance,copper+sky,serenity,time isn’t yours,0.02
+238,00:03:58,static,painter,gesture,indigo+bronze,discomfort,beauty hiding decay,0.83
+239,00:03:59,static,soldier,kiss,indigo+bronze,discomfort,time isn’t yours,0.26
+240,00:04:00,dynamic,mother,kiss,olive+brown,fatigue,caressing the ordinary,0.19
+241,00:04:01,dynamic,bather,nod,sepia+black,love,pretending to care,0.17
+242,00:04:02,dynamic,servant,nod,gray+navy,joy,duty without love,0.93
+243,00:04:03,dynamic,mother,wait,red+charcoal,joy,truth in disguise,0.59
+244,00:04:04,static,soldier,reach,teal+ochre,love,caressing the ordinary,0.25
+245,00:04:05,dynamic,lover,dance,lavender+ivory,hope,serving without being seen,0.47
+246,00:04:06,static,soldier,step,sepia+black,fatigue,duty without love,0.54
+247,00:04:07,dynamic,bather,collapse,indigo+bronze,melancholy,performing charm,0.36
+248,00:04:08,dynamic,lover,dance,rose+peach,contempt,beauty hiding decay,0.37
+249,00:04:09,dynamic,soldier,smile,white+emerald,discomfort,bound by rules,0.47
+250,00:04:10,dynamic,philosopher,smile,copper+sky,discomfort,the world still soft,0.91
+251,00:04:11,static,actor,glance,gray+navy,tenderness,serving without being seen,0.7
+252,00:04:12,static,gardener,smile,blue+grey,tension,caught in breathless grace,0.76
+253,00:04:13,dynamic,painter,kiss,rose+peach,discomfort,bound by rules,0.51
+254,00:04:14,dynamic,waitress,step,gold+coral,serenity,serving without being seen,0.32
+255,00:04:15,static,bather,glance,gold+coral,melancholy,caught in breathless grace,0.38
+256,00:04:16,static,dancer,dance,white+emerald,tenderness,truth in disguise,0.59
+257,00:04:17,static,servant,reach,gray+navy,contempt,bound by rules,0.15
+258,00:04:18,static,hunter,dance,indigo+bronze,love,spinning under sunlight,0.35
+259,00:04:19,dynamic,mechanic,reach,indigo+bronze,restlessness,pretending to care,0.3
+260,00:04:20,dynamic,servant,smile,yellow+cream,despair,duty without love,0.58
+261,00:04:21,dynamic,waitress,glance,lavender+ivory,hope,duty without love,0.06
+262,00:04:22,static,waitress,glance,copper+sky,restlessness,truth in disguise,0.13
+263,00:04:23,static,actor,wait,white+emerald,discomfort,waiting for permission,0.37
+264,00:04:24,static,hunter,step,rose+peach,melancholy,truth in disguise,0.15
+265,00:04:25,dynamic,painter,smile,teal+ochre,awe,pretending to care,0.19
+266,00:04:26,static,soldier,reach,yellow+cream,melancholy,time isn’t yours,0.92
+267,00:04:27,dynamic,gardener,sigh,teal+ochre,bliss,eyeing invisible lines,0.38
+268,00:04:28,static,actor,gesture,sepia+black,awe,caressing the ordinary,0.14
+269,00:04:29,dynamic,servant,turn,rose+peach,joy,beauty hiding decay,0.03
+270,00:04:30,static,painter,reach,sepia+black,fatigue,pretending to care,0.19
+271,00:04:31,dynamic,actor,nod,gold+coral,fatigue,the world still soft,0.83
+272,00:04:32,dynamic,mother,wait,copper+sky,awe,bound by rules,0.45
+273,00:04:33,dynamic,aristocrat,kiss,gray+navy,restlessness,time isn’t yours,0.25
+274,00:04:34,dynamic,aristocrat,kiss,marble+ash,discomfort,time isn’t yours,0.29
+275,00:04:35,dynamic,child,sigh,yellow+cream,tenderness,pretending to care,0.71
+276,00:04:36,static,soldier,stare,rose+peach,fatigue,bound by rules,0.75
+277,00:04:37,static,bather,wait,teal+ochre,love,waiting for permission,0.46
+278,00:04:38,static,mother,reach,gray+navy,melancholy,bound by rules,0.91
+279,00:04:39,static,waitress,laugh,rose+peach,hope,beauty hiding decay,0.26
+280,00:04:40,dynamic,philosopher,laugh,white+emerald,restlessness,eyeing invisible lines,0.92
+281,00:04:41,dynamic,actor,stare,teal+ochre,restlessness,beauty hiding decay,0.17
+282,00:04:42,dynamic,soldier,kiss,white+emerald,love,truth in disguise,0.01
+283,00:04:43,static,mother,gesture,blue+grey,resentment,caught in breathless grace,0.62
+284,00:04:44,static,soldier,stare,sepia+black,joy,spinning under sunlight,0.25
+285,00:04:45,static,hunter,reach,gray+navy,serenity,caught in breathless grace,0.91
+286,00:04:46,static,dancer,kiss,blue+grey,resentment,duty without love,0.61
+287,00:04:47,dynamic,mother,laugh,olive+brown,hope,the world still soft,0.92
+288,00:04:48,dynamic,gardener,dance,pink+white,discomfort,serving without being seen,0.67
+289,00:04:49,static,lover,kiss,yellow+cream,serenity,serving without being seen,0.94
+290,00:04:50,static,aristocrat,stare,olive+brown,contempt,serving without being seen,0.11
+291,00:04:51,dynamic,child,glance,blue+grey,discomfort,duty without love,0.73
+292,00:04:52,static,servant,step,teal+ochre,melancholy,caught in breathless grace,0.34
+293,00:04:53,static,philosopher,dance,marble+ash,joy,time isn’t yours,0.11
+294,00:04:54,dynamic,hunter,sigh,rose+peach,hope,duty without love,0.87
+295,00:04:55,dynamic,dancer,turn,pink+white,hope,beauty hiding decay,0.83
+296,00:04:56,static,actor,wait,indigo+bronze,hope,spinning under sunlight,0.52
+297,00:04:57,dynamic,child,turn,rose+peach,melancholy,time isn’t yours,0.81
+298,00:04:58,static,dancer,kiss,red+charcoal,serenity,truth in disguise,0.52
+299,00:04:59,dynamic,lover,collapse,sepia+black,tenderness,eyeing invisible lines,0.24
+300,00:05:00,dynamic,actor,reach,blue+grey,love,spinning under sunlight,0.07
+301,00:05:01,dynamic,hunter,turn,copper+sky,love,serving without being seen,0.91
+302,00:05:02,static,lover,sigh,lavender+ivory,bliss,eyeing invisible lines,0.36
+303,00:05:03,dynamic,aristocrat,gesture,gold+coral,awe,performing charm,0.71
+304,00:05:04,static,servant,turn,gold+coral,hope,time isn’t yours,0.73
+305,00:05:05,static,child,laugh,yellow+cream,joy,serving without being seen,0.46
+306,00:05:06,static,aristocrat,pause,lavender+ivory,tension,truth in disguise,0.24
+307,00:05:07,static,child,reach,pink+white,fatigue,caught in breathless grace,0.68
+308,00:05:08,static,mechanic,gesture,lavender+ivory,fatigue,waiting for permission,0.57
+309,00:05:09,static,hunter,sigh,yellow+cream,bliss,eyeing invisible lines,0.62
+310,00:05:10,dynamic,lover,step,indigo+bronze,resentment,pretending to care,0.75
+311,00:05:11,static,waitress,nod,marble+ash,resentment,caught in breathless grace,0.15
+312,00:05:12,static,mother,nod,olive+brown,tenderness,pretending to care,0.91
+313,00:05:13,dynamic,servant,kiss,lavender+ivory,melancholy,performing charm,0.45
+314,00:05:14,static,servant,collapse,marble+ash,joy,eyeing invisible lines,0.54
+315,00:05:15,dynamic,bather,dance,white+emerald,melancholy,eternal joy,0.61
+316,00:05:16,static,child,stare,yellow+cream,hope,beauty hiding decay,0.71
+317,00:05:17,dynamic,lover,pause,gray+navy,fatigue,pretending to care,0.22
+318,00:05:18,dynamic,mother,collapse,lavender+ivory,hope,serving without being seen,0.51
+319,00:05:19,static,lover,kiss,rose+peach,serenity,time isn’t yours,1.0
+320,00:05:20,static,mother,turn,lavender+ivory,bliss,caught in breathless grace,0.05
+321,00:05:21,static,hunter,turn,gold+coral,resentment,time isn’t yours,0.37
+322,00:05:22,static,lover,laugh,yellow+cream,despair,caught in breathless grace,0.01
+323,00:05:23,static,lover,dance,indigo+bronze,awe,duty without love,0.5
+324,00:05:24,static,mechanic,laugh,lavender+ivory,discomfort,spinning under sunlight,0.44
+325,00:05:25,static,servant,turn,rose+peach,bliss,beauty hiding decay,0.23
+326,00:05:26,dynamic,hunter,reach,indigo+bronze,tenderness,spinning under sunlight,0.45
+327,00:05:27,dynamic,child,reach,sepia+black,discomfort,beauty hiding decay,0.6
+328,00:05:28,static,aristocrat,turn,sepia+black,tenderness,waiting for permission,0.37
+329,00:05:29,dynamic,lover,reach,indigo+bronze,hope,truth in disguise,0.12
+330,00:05:30,static,mechanic,dance,teal+ochre,bliss,the world still soft,0.9
+331,00:05:31,static,hunter,sigh,pink+white,love,serving without being seen,0.97
+332,00:05:32,static,philosopher,pause,teal+ochre,joy,performing charm,0.03
+333,00:05:33,static,hunter,step,teal+ochre,melancholy,performing charm,0.06
+334,00:05:34,static,lover,collapse,blue+grey,serenity,bound by rules,0.85
+335,00:05:35,static,mother,reach,lavender+ivory,awe,serving without being seen,0.87
+336,00:05:36,static,mother,nod,copper+sky,tenderness,time isn’t yours,0.6
+337,00:05:37,static,aristocrat,laugh,blue+grey,contempt,bound by rules,0.37
+338,00:05:38,dynamic,waitress,laugh,blue+grey,tension,caught in breathless grace,0.1
+339,00:05:39,static,lover,wait,teal+ochre,despair,eyeing invisible lines,0.82
+340,00:05:40,static,philosopher,nod,copper+sky,joy,waiting for permission,0.11
+341,00:05:41,dynamic,soldier,stare,teal+ochre,joy,caressing the ordinary,0.85
+342,00:05:42,static,dancer,collapse,yellow+cream,contempt,caught in breathless grace,0.85
+343,00:05:43,dynamic,hunter,pause,indigo+bronze,tension,caught in breathless grace,0.33
+344,00:05:44,static,philosopher,sigh,marble+ash,bliss,pretending to care,0.61
+345,00:05:45,dynamic,lover,kiss,sepia+black,joy,the world still soft,1.0
+346,00:05:46,static,mechanic,turn,olive+brown,love,serving without being seen,0.84
+347,00:05:47,dynamic,waitress,wait,indigo+bronze,serenity,bound by rules,0.13
+348,00:05:48,static,philosopher,sigh,copper+sky,joy,time isn’t yours,0.55
+349,00:05:49,dynamic,soldier,collapse,white+emerald,tenderness,eyeing invisible lines,0.65
+350,00:05:50,static,waitress,laugh,white+emerald,despair,caressing the ordinary,0.14
+351,00:05:51,static,hunter,laugh,rose+peach,bliss,the world still soft,0.69
+352,00:05:52,dynamic,philosopher,dance,white+emerald,awe,truth in disguise,0.97
+353,00:05:53,static,aristocrat,sigh,lavender+ivory,bliss,waiting for permission,0.04
+354,00:05:54,dynamic,mother,dance,sepia+black,discomfort,bound by rules,0.35
+355,00:05:55,static,bather,wait,gray+navy,tenderness,pretending to care,0.01
+356,00:05:56,static,painter,turn,white+emerald,restlessness,the world still soft,0.57
+357,00:05:57,static,soldier,step,blue+grey,melancholy,eyeing invisible lines,0.33
+358,00:05:58,static,painter,collapse,marble+ash,joy,the world still soft,0.18
+359,00:05:59,static,philosopher,gesture,sepia+black,melancholy,spinning under sunlight,0.19
+360,00:06:00,static,hunter,smile,yellow+cream,tension,bound by rules,0.11
+361,00:06:01,dynamic,mother,collapse,rose+peach,joy,caught in breathless grace,0.49
+362,00:06:02,dynamic,dancer,stare,copper+sky,melancholy,caressing the ordinary,0.91
+363,00:06:03,dynamic,servant,turn,yellow+cream,fatigue,eternal joy,0.77
+364,00:06:04,dynamic,bather,sigh,gold+coral,joy,performing charm,0.86
+365,00:06:05,static,philosopher,reach,indigo+bronze,awe,waiting for permission,0.44
+366,00:06:06,dynamic,soldier,glance,sepia+black,tenderness,caught in breathless grace,0.98
+367,00:06:07,dynamic,lover,sigh,yellow+cream,love,caressing the ordinary,0.65
+368,00:06:08,static,painter,dance,rose+peach,fatigue,bound by rules,0.79
+369,00:06:09,static,aristocrat,turn,gold+coral,contempt,caught in breathless grace,0.4
+370,00:06:10,static,dancer,nod,yellow+cream,awe,beauty hiding decay,0.7
+371,00:06:11,dynamic,hunter,step,pink+white,love,performing charm,0.81
+372,00:06:12,dynamic,lover,wait,sepia+black,despair,beauty hiding decay,0.53
+373,00:06:13,static,lover,wait,lavender+ivory,melancholy,serving without being seen,0.47
+374,00:06:14,dynamic,mechanic,dance,yellow+cream,restlessness,caught in breathless grace,0.98
+375,00:06:15,dynamic,hunter,stare,marble+ash,tension,bound by rules,0.36
+376,00:06:16,dynamic,gardener,dance,gray+navy,tension,eternal joy,0.88
+377,00:06:17,static,child,laugh,marble+ash,restlessness,waiting for permission,0.1
+378,00:06:18,dynamic,servant,turn,blue+grey,awe,pretending to care,0.62
+379,00:06:19,static,child,glance,pink+white,hope,bound by rules,0.23
+380,00:06:20,static,mechanic,glance,indigo+bronze,restlessness,serving without being seen,0.57
+381,00:06:21,dynamic,painter,smile,marble+ash,awe,performing charm,0.23
+382,00:06:22,static,aristocrat,turn,indigo+bronze,love,performing charm,0.31
+383,00:06:23,static,lover,dance,blue+grey,fatigue,the world still soft,0.75
+384,00:06:24,static,aristocrat,dance,gray+navy,awe,time isn’t yours,0.42
+385,00:06:25,dynamic,actor,pause,sepia+black,despair,caught in breathless grace,0.46
+386,00:06:26,dynamic,waitress,glance,copper+sky,tension,truth in disguise,0.98
+387,00:06:27,static,soldier,pause,yellow+cream,despair,bound by rules,0.27
+388,00:06:28,dynamic,waitress,turn,copper+sky,despair,the world still soft,0.73
+389,00:06:29,static,philosopher,step,white+emerald,serenity,caught in breathless grace,0.69
+390,00:06:30,dynamic,lover,smile,pink+white,tenderness,the world still soft,0.18
+391,00:06:31,static,actor,stare,gray+navy,contempt,bound by rules,0.11
+392,00:06:32,static,philosopher,sigh,gray+navy,tenderness,performing charm,0.08
+393,00:06:33,dynamic,mechanic,kiss,teal+ochre,hope,time isn’t yours,0.97
+394,00:06:34,static,aristocrat,smile,yellow+cream,love,performing charm,0.97
+395,00:06:35,static,aristocrat,wait,lavender+ivory,hope,bound by rules,0.4
+396,00:06:36,dynamic,philosopher,stare,marble+ash,love,caressing the ordinary,0.58
+397,00:06:37,dynamic,aristocrat,step,lavender+ivory,serenity,truth in disguise,0.8
+398,00:06:38,dynamic,soldier,gesture,pink+white,despair,duty without love,0.69
+399,00:06:39,static,mechanic,step,copper+sky,joy,caught in breathless grace,0.19
+400,00:06:40,dynamic,dancer,collapse,yellow+cream,tenderness,truth in disguise,0.2
+401,00:06:41,dynamic,lover,collapse,blue+grey,joy,truth in disguise,0.78
+402,00:06:42,static,actor,laugh,pink+white,tenderness,time isn’t yours,0.7
+403,00:06:43,static,gardener,reach,olive+brown,bliss,beauty hiding decay,0.16
+404,00:06:44,static,painter,reach,yellow+cream,tenderness,the world still soft,0.01
+405,00:06:45,dynamic,aristocrat,stare,gold+coral,melancholy,truth in disguise,0.2
+406,00:06:46,static,actor,step,blue+grey,tenderness,caught in breathless grace,0.26
+407,00:06:47,static,dancer,glance,yellow+cream,awe,beauty hiding decay,0.31
+408,00:06:48,static,gardener,collapse,lavender+ivory,restlessness,the world still soft,0.48
+409,00:06:49,static,child,gesture,indigo+bronze,fatigue,eyeing invisible lines,0.06
+410,00:06:50,dynamic,gardener,nod,pink+white,discomfort,eternal joy,0.67
+411,00:06:51,dynamic,bather,stare,olive+brown,awe,eternal joy,0.72
+412,00:06:52,dynamic,mother,wait,gold+coral,awe,serving without being seen,0.62
+413,00:06:53,static,lover,kiss,blue+grey,discomfort,the world still soft,0.35
+414,00:06:54,static,hunter,stare,pink+white,melancholy,bound by rules,0.8
+415,00:06:55,static,philosopher,dance,gray+navy,love,duty without love,0.28
+416,00:06:56,static,lover,kiss,indigo+bronze,tension,truth in disguise,0.66
+417,00:06:57,dynamic,dancer,pause,gray+navy,discomfort,time isn’t yours,1.0
+418,00:06:58,dynamic,lover,gesture,gray+navy,discomfort,the world still soft,0.26
+419,00:06:59,dynamic,lover,stare,gray+navy,restlessness,time isn’t yours,0.44
+420,00:07:00,dynamic,servant,stare,rose+peach,contempt,waiting for permission,0.34
+421,00:07:01,static,bather,stare,gold+coral,fatigue,time isn’t yours,0.84
+422,00:07:02,dynamic,mother,glance,marble+ash,serenity,eternal joy,0.33
+423,00:07:03,static,mother,dance,copper+sky,serenity,waiting for permission,0.79
+424,00:07:04,dynamic,mother,step,indigo+bronze,hope,pretending to care,0.24
+425,00:07:05,static,dancer,sigh,pink+white,fatigue,bound by rules,0.51
+426,00:07:06,static,mother,turn,olive+brown,contempt,eternal joy,0.3
+427,00:07:07,static,hunter,step,yellow+cream,serenity,waiting for permission,0.34
+428,00:07:08,dynamic,mechanic,wait,teal+ochre,awe,caressing the ordinary,0.63
+429,00:07:09,dynamic,servant,dance,blue+grey,fatigue,performing charm,0.78
+430,00:07:10,dynamic,waitress,step,yellow+cream,contempt,pretending to care,0.48
+431,00:07:11,dynamic,lover,gesture,copper+sky,love,waiting for permission,0.15
+432,00:07:12,static,actor,collapse,rose+peach,tenderness,time isn’t yours,0.67
+433,00:07:13,dynamic,servant,pause,marble+ash,awe,caressing the ordinary,0.65
+434,00:07:14,static,soldier,turn,pink+white,bliss,time isn’t yours,0.82
+435,00:07:15,dynamic,soldier,kiss,teal+ochre,melancholy,bound by rules,0.41
+436,00:07:16,static,mechanic,gesture,lavender+ivory,awe,the world still soft,0.27
+437,00:07:17,static,servant,nod,gold+coral,awe,time isn’t yours,0.66
+438,00:07:18,static,mechanic,smile,yellow+cream,discomfort,eyeing invisible lines,0.5
+439,00:07:19,dynamic,dancer,smile,yellow+cream,tension,bound by rules,0.12
+440,00:07:20,static,dancer,stare,marble+ash,awe,performing charm,0.22
+441,00:07:21,dynamic,hunter,reach,indigo+bronze,awe,beauty hiding decay,0.26
+442,00:07:22,static,soldier,sigh,teal+ochre,discomfort,performing charm,0.96
+443,00:07:23,dynamic,mother,nod,indigo+bronze,tenderness,bound by rules,0.09
+444,00:07:24,dynamic,servant,nod,sepia+black,resentment,bound by rules,0.35
+445,00:07:25,static,philosopher,wait,gold+coral,despair,eyeing invisible lines,0.64
+446,00:07:26,static,child,nod,marble+ash,contempt,the world still soft,0.38
+447,00:07:27,dynamic,child,laugh,white+emerald,serenity,performing charm,0.3
+448,00:07:28,dynamic,philosopher,pause,rose+peach,fatigue,the world still soft,0.41
+449,00:07:29,dynamic,child,smile,marble+ash,discomfort,duty without love,0.8
+450,00:07:30,static,painter,gesture,gold+coral,awe,eternal joy,0.3
+451,00:07:31,dynamic,philosopher,stare,white+emerald,tension,eyeing invisible lines,0.9
+452,00:07:32,dynamic,philosopher,step,sepia+black,despair,time isn’t yours,0.81
+453,00:07:33,dynamic,mother,wait,blue+grey,hope,truth in disguise,0.42
+454,00:07:34,dynamic,aristocrat,step,red+charcoal,tension,eyeing invisible lines,0.35
+455,00:07:35,dynamic,gardener,reach,lavender+ivory,contempt,truth in disguise,0.11
+456,00:07:36,static,soldier,reach,blue+grey,awe,the world still soft,0.05
+457,00:07:37,static,gardener,laugh,yellow+cream,serenity,pretending to care,0.92
+458,00:07:38,dynamic,waitress,glance,sepia+black,resentment,waiting for permission,0.81
+459,00:07:39,static,soldier,dance,red+charcoal,tenderness,caressing the ordinary,0.47
+460,00:07:40,static,mechanic,pause,white+emerald,tenderness,pretending to care,0.19
+461,00:07:41,dynamic,mother,glance,teal+ochre,discomfort,eternal joy,0.64
+462,00:07:42,dynamic,soldier,pause,copper+sky,discomfort,bound by rules,0.59
+463,00:07:43,dynamic,mother,wait,sepia+black,contempt,beauty hiding decay,0.25
+464,00:07:44,dynamic,aristocrat,smile,lavender+ivory,melancholy,duty without love,0.49
+465,00:07:45,static,gardener,nod,blue+grey,awe,duty without love,0.52
+466,00:07:46,static,servant,laugh,rose+peach,resentment,pretending to care,0.72
+467,00:07:47,dynamic,gardener,reach,marble+ash,love,waiting for permission,0.56
+468,00:07:48,static,bather,pause,copper+sky,bliss,spinning under sunlight,0.72
+469,00:07:49,static,painter,laugh,gray+navy,tenderness,waiting for permission,0.62
+470,00:07:50,dynamic,mechanic,nod,indigo+bronze,love,eyeing invisible lines,1.0
+471,00:07:51,static,soldier,sigh,yellow+cream,contempt,the world still soft,0.5
+472,00:07:52,static,waitress,step,blue+grey,resentment,truth in disguise,0.09
+473,00:07:53,dynamic,hunter,dance,gold+coral,discomfort,waiting for permission,0.03
+474,00:07:54,dynamic,soldier,wait,red+charcoal,awe,time isn’t yours,0.73
+475,00:07:55,dynamic,child,wait,indigo+bronze,tenderness,truth in disguise,0.61
+476,00:07:56,static,gardener,nod,marble+ash,awe,duty without love,0.2
+477,00:07:57,dynamic,hunter,stare,sepia+black,fatigue,waiting for permission,0.17
+478,00:07:58,static,painter,step,copper+sky,restlessness,pretending to care,0.36
+479,00:07:59,static,bather,laugh,red+charcoal,serenity,duty without love,0.86
+480,00:08:00,static,lover,collapse,indigo+bronze,tension,serving without being seen,0.82
+481,00:08:01,dynamic,child,step,gray+navy,love,caught in breathless grace,0.7
+482,00:08:02,dynamic,servant,wait,indigo+bronze,tenderness,beauty hiding decay,0.23
+483,00:08:03,dynamic,painter,nod,teal+ochre,despair,truth in disguise,0.87
+484,00:08:04,dynamic,bather,gesture,blue+grey,bliss,spinning under sunlight,0.76
+485,00:08:05,static,bather,glance,indigo+bronze,tension,duty without love,0.52
+486,00:08:06,dynamic,dancer,turn,blue+grey,discomfort,time isn’t yours,0.39
+487,00:08:07,static,lover,smile,red+charcoal,melancholy,eternal joy,0.73
+488,00:08:08,dynamic,philosopher,nod,yellow+cream,tension,time isn’t yours,0.07
+489,00:08:09,dynamic,servant,pause,white+emerald,melancholy,duty without love,0.5
+490,00:08:10,static,philosopher,pause,marble+ash,awe,caught in breathless grace,0.75
+491,00:08:11,dynamic,soldier,reach,pink+white,discomfort,serving without being seen,0.35
+492,00:08:12,dynamic,child,dance,teal+ochre,bliss,performing charm,0.28
+493,00:08:13,dynamic,hunter,sigh,yellow+cream,love,truth in disguise,0.99
+494,00:08:14,static,dancer,smile,copper+sky,fatigue,the world still soft,0.97
+495,00:08:15,static,mother,collapse,teal+ochre,bliss,bound by rules,0.71
+496,00:08:16,dynamic,bather,turn,blue+grey,restlessness,duty without love,0.78
+497,00:08:17,static,philosopher,step,gold+coral,despair,caressing the ordinary,0.23
+498,00:08:18,dynamic,servant,turn,indigo+bronze,fatigue,duty without love,0.72
+499,00:08:19,static,gardener,smile,gold+coral,hope,spinning under sunlight,0.97
