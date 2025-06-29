@@ -1,3 +1,16 @@
+> ✨ *And we loved it.*       
+> *Because it was ours.*      
+> *Because it **felt** like agency.*      
+
+---
+
+Hook the commons (🌊)
+Modulate the boundary (❤️)
+Exploit the loop (🌀)
+Polish the reward (🐬)
+Enforce the illusion (🔁)
+And we loved it. Because it was ours. Because it felt like agency
+
 ## A
 
 <h3>🌊 <code>.csv</code> (Background): Commons, Simulation</h3>
