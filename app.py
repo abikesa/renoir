@@ -3,6 +3,7 @@ from flask import Flask, jsonify, render_template
 import pandas as pd
 import random
 
+# local: flask, remote: gunicorn
 app = Flask(__name__)
 data = pd.read_csv(os.path.join(os.path.dirname(__file__), "inheritance.csv"))
 
