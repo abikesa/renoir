@@ -1,9 +1,14 @@
+import os
 from flask import Flask, jsonify, render_template
 import pandas as pd
 import random
 
 app = Flask(__name__)
-data = pd.read_csv("inheritance.csv")
+data = pd.read_csv(os.path.join(os.path.dirname(__file__), "inheritance.csv"))
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 5000)))
+
 
 @app.route('/')
 def index():
