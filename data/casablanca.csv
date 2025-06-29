@@ -1,0 +1,13 @@
+frame_id,timestamp,scene_id,character,gesture,subtext,aesthetic_palette,emotional_tone,social_tension_score,line_of_dialogue
+0,00:00:00,1:Introduction,Narrator,voiceover,"exile as economy",sepia+cream,foreboding,0.58,"With the coming of the Second World War..."
+1,00:01:35,1:Checkpoint,Refugee,plead,"hope meets bureaucracy",gray+khaki,desperation,0.69,
+2,00:03:12,2:Rick's Café,Rick,smoke,"distance as armor",white+charcoal,coolness,0.45,
+3,00:04:01,2:Rick's Café,Ugarte,lean_in,"weasel in the shadow",olive+maroon,suspicion,0.76,"You despise me, don’t you Rick?"
+4,00:04:06,2:Rick's Café,Rick,smirk,"holding moral line",silver+black,deadpan,0.33,"If I gave you any thought, I probably would."
+5,00:07:25,3:Letters,Ugarte,hand_off,"desperation disguised as trust",brown+yellow,nervousness,0.68,
+6,00:08:59,3:Letters,Renault,raise_brow,"gleeful corruption",blue+white,amusement,0.52,"I'm only a poor corrupt official."
+7,00:12:43,4:Ilsa Enters,Ilsa,walk_in,"past returns",white+gray,awe,0.84,
+8,00:13:15,4:Ilsa,Sam,hesitate,"bridge between worlds",black+gold,longing,0.71,"Play it, Sam. Play 'As Time Goes By.'"
+9,00:13:58,4:Ilsa,Sam,glance,"unspeakable memory",dust+gold,melancholy,0.77,
+10,00:14:10,4:Rick,freeze,"haunted recognition",white+shadow,shock,0.92,
+

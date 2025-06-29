@@ -1,0 +1,13 @@
+frame_id,timestamp,scene_id,character,gesture,subtext,aesthetic_palette,emotional_tone,social_tension_score
+0,00:00:00,1:Arrival,Narrator,announcement,"heroism as facade",gray+white,tension,0.45
+1,00:00:06,1:Arrival,André,exit_plane,"seeking validation",navy+white,hope,0.39
+2,00:00:14,1:Arrival,Octave,run_to_meet,"friendship masking need",camel+tan,affection,0.52
+3,00:00:20,1:Arrival,Crowd,cheer,"public hunger for myth",white+blue,excitement,0.28
+4,00:00:31,1:Arrival,André,pause_for_camera,"performance over authenticity",silver+black,discomfort,0.63
+5,00:00:37,1:Arrival,Octave,embrace,"possessive affection",ivory+rose,awkwardness,0.48
+6,00:00:49,1:Arrival,André,speak_to_radio,"love gone unanswered",navy+gray,loss,0.71
+7,00:01:03,1:Arrival,Christine (radio),silent_absence,"dissonance between lovers",light_blue+white,detachment,0.86
+8,00:01:19,1:Arrival,André,drop_gaze,"private shame leaks",tan+charcoal,grief,0.74
+9,00:01:25,1:Arrival,Octave,squeeze_shoulder,"performing comfort",peach+ivory,concern,0.51
+10,00:01:39,1:Arrival,Crowd,cheer,"refusal to acknowledge emotional fracture",white+navy,denial,0.62
+
